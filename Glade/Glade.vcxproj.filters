@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Arquivos de Origem">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Recurso">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Glad">
+      <UniqueIdentifier>{c6622ca7-b9fe-4ddb-bd61-cc2c8f9ec73a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\KMD2">
+      <UniqueIdentifier>{6e430f2e-2e98-4723-b4f3-3918a5632482}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\Glad\KMD2">
+      <UniqueIdentifier>{80167b9a-436d-4852-b1b7-2c7588b8f25a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\KMD2\Renderer">
+      <UniqueIdentifier>{fc7876ef-00b8-4b72-b5e7-0c2fdf2c9846}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\KMD2\Vector">
+      <UniqueIdentifier>{027ac513-697c-4e6e-a225-49c59ef4f202}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\KMD2\Core">
+      <UniqueIdentifier>{f86a286d-cd06-4130-bc16-364cc30c70cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Cabeçalho\KMD2\Color">
+      <UniqueIdentifier>{c72bf8c8-5130-43e8-bf10-b5373a1df80e}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Glad\glad.h">
+      <Filter>Arquivos de Cabeçalho\Glad</Filter>
+    </ClInclude>
+    <ClInclude Include="Glad\khrplatform.h">
+      <Filter>Arquivos de Cabeçalho\Glad</Filter>
+    </ClInclude>
+    <ClInclude Include="Glad\KMD2\Shader.h">
+      <Filter>Arquivos de Cabeçalho\Glad\KMD2</Filter>
+    </ClInclude>
+    <ClInclude Include="Glad\KMD2\ShaderProgram.h">
+      <Filter>Arquivos de Cabeçalho\Glad\KMD2</Filter>
+    </ClInclude>
+    <ClInclude Include="Glad\KMD2\VAO.h">
+      <Filter>Arquivos de Cabeçalho\Glad\KMD2</Filter>
+    </ClInclude>
+    <ClInclude Include="Glad\KMD2\VBO.h">
+      <Filter>Arquivos de Cabeçalho\Glad\KMD2</Filter>
+    </ClInclude>
+    <ClInclude Include="KMD2\Core\Core.h">
+      <Filter>Arquivos de Cabeçalho\KMD2\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="KMD2\Color\Color.h">
+      <Filter>Arquivos de Cabeçalho\KMD2\Color</Filter>
+    </ClInclude>
+    <ClInclude Include="KMD2\Renderer\Renderer.h">
+      <Filter>Arquivos de Cabeçalho\KMD2\Renderer</Filter>
+    </ClInclude>
+    <ClInclude Include="KMD2\Vectors\IVector2.h">
+      <Filter>Arquivos de Cabeçalho\KMD2\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="KMD2\Vectors\Vector2.h">
+      <Filter>Arquivos de Cabeçalho\KMD2\Vector</Filter>
+    </ClInclude>
+    <ClInclude Include="Game.h">
+      <Filter>Arquivos de Origem</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Glad\glad.c">
+      <Filter>Arquivos de Cabeçalho\Glad</Filter>
+    </ClCompile>
+    <ClCompile Include="Glad\KMD2\ShaderProgram.cpp">
+      <Filter>Arquivos de Cabeçalho\Glad\KMD2</Filter>
+    </ClCompile>
+    <ClCompile Include="KMD2\Renderer\Renderer.cpp">
+      <Filter>Arquivos de Cabeçalho\KMD2\Renderer</Filter>
+    </ClCompile>
+    <ClCompile Include="KMD2\Vectors\IVector2.cpp">
+      <Filter>Arquivos de Cabeçalho\KMD2\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="KMD2\Vectors\Vector2.cpp">
+      <Filter>Arquivos de Cabeçalho\KMD2\Vector</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+    <ClCompile Include="Game.cpp">
+      <Filter>Arquivos de Origem</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="StartVertexShader.glsl">
+      <Filter>Arquivos de Recurso</Filter>
+    </None>
+    <None Include="StartFragmentShader.glsl">
+      <Filter>Arquivos de Recurso</Filter>
+    </None>
+  </ItemGroup>
+</Project>
