@@ -16,11 +16,7 @@ int main() {
 	{
 		while (SDL_PollEvent(&Game->Event)) {
 
-			InputEvent Input = {};
-
-			if (Game->Event.type == SDL_EVENT_QUIT) Input.Type = InputType::QUIT;
-
-			Game->_Input(Input);
+			Game->_Input(Game->Event);
 		}
 
 		Uint64 CurrentDeltaTick = SDL_GetTicks();

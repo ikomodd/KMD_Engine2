@@ -9,6 +9,8 @@
 
 #include "../../KMD2/Renderer/Renderer.h"
 
+#include "../Input/InputEvent.h"
+
 #include <SDL3/SDL.h>
 
 //
@@ -54,7 +56,7 @@ public:
 
 	virtual void _Ready() {}
 
-	virtual void _Input(InputEvent Input) {}
+	virtual void _Input(SDL_Event event) {}
 
 	virtual void _Process(double Delta) {}
 

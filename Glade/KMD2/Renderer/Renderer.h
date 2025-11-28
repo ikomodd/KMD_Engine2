@@ -18,27 +18,25 @@
 class KMD_Renderer {
 private:
 
-	float Rect[9] = {
-
-		0.0f, 0.5f, 0.0f,
-		-0.5f, -0.5f, 0.0f,
-		0.5f, -0.5f, 0.0f,
-	};
-
 	SDL_GLContext GlContext = {};
 
 public:
-
-	KMD_GL_ShaderProgram ShaderProgram;
-
-	KMD_GL_VertexBufferObject VBO = KMD_GL_VertexBufferObject(GL_ARRAY_BUFFER, sizeof(Rect), Rect, GL_STATIC_DRAW);
-	KMD_GL_VertexArrayObject VAO;
 
 	color4 BackgroundColor = color4::Black();
 
 	//
 
-	KMD_Renderer(SDL_Window* window, color4 background_color);
+	KMD_Renderer(SDL_Window* window, color4 background_color) {
+
+		SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
+		SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 6);
+		SDL_GL_SetAttribute(SDL_GL_CONTEXT_PROFILE_MASK, SDL_GL_CONTEXT_PROFILE_CORE);
+
+		GlContext = SDL_GL_CreateContext(window);
+		SDL_GL_MakeCurrent(window, GlContext);
+
+		gladLoadGLLoader((GLADloadproc)SDL_GL_GetProcAddress);
+	}
 
 	~KMD_Renderer() {
 
@@ -53,7 +51,7 @@ public:
 		glClear(GL_COLOR_BUFFER_BIT);
 	}
 
-	void Draw(SDL_Window* Window) {
+	void Swap(SDL_Window* Window) {
 
 		SDL_GL_SwapWindow(Window);
 	}

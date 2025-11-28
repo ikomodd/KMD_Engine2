@@ -6,9 +6,9 @@ void GameCore::_Ready() {
 
 }
 
-void GameCore::_Input(InputEvent Input) {
+void GameCore::_Input(SDL_Event event) {
 
-	if (Input.Type == InputType::QUIT) _Finish();
+	if (event.type == SDL_EVENT_QUIT) _Finish();
 
 	// Seu Script
 
@@ -18,13 +18,9 @@ void GameCore::_Process(double Delta) {
 
 	Renderer->Clear();
 
-	Renderer->ShaderProgram.Use();
-	Renderer->VAO.Bind();
-	glDrawArrays(GL_TRIANGLES, 0, 3);
-
 	// Seu Script
 
-	Renderer->Draw(Window);
+	Renderer->Swap(Window);
 }
 
 void GameCore::_Finish() {

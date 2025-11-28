@@ -28,6 +28,7 @@
     <ClInclude Include="Glad\KMD2\VBO.h" />
     <ClInclude Include="KMD2\Color\Color.h" />
     <ClInclude Include="KMD2\Core\Core.h" />
+    <ClInclude Include="KMD2\Input\InputEvent.h" />
     <ClInclude Include="KMD2\Renderer\Renderer.h" />
     <ClInclude Include="KMD2\Vectors\IVector2.h" />
     <ClInclude Include="KMD2\Vectors\Vector2.h" />
@@ -36,7 +37,6 @@
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Glad\glad.c" />
     <ClCompile Include="Glad\KMD2\ShaderProgram.cpp" />
-    <ClCompile Include="KMD2\Renderer\Renderer.cpp" />
     <ClCompile Include="KMD2\Vectors\IVector2.cpp" />
     <ClCompile Include="KMD2\Vectors\Vector2.cpp" />
     <ClCompile Include="main.cpp" />

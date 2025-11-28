@@ -34,6 +34,12 @@
     <Filter Include="Arquivos de Cabeçalho\KMD2\Color">
       <UniqueIdentifier>{c72bf8c8-5130-43e8-bf10-b5373a1df80e}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Arquivos de Cabeçalho\KMD2\Input">
+      <UniqueIdentifier>{3b58e5fe-6451-4e42-b84d-4ee6be25ffbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Arquivos de Origem\Game">
+      <UniqueIdentifier>{4db172bd-a7f5-4f60-ab49-4d5c5438c893}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Glad\glad.h">
@@ -69,8 +75,11 @@
     <ClInclude Include="KMD2\Vectors\Vector2.h">
       <Filter>Arquivos de Cabeçalho\KMD2\Vector</Filter>
     </ClInclude>
+    <ClInclude Include="KMD2\Input\InputEvent.h">
+      <Filter>Arquivos de Cabeçalho\KMD2\Input</Filter>
+    </ClInclude>
     <ClInclude Include="Game.h">
-      <Filter>Arquivos de Origem</Filter>
+      <Filter>Arquivos de Origem\Game</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -79,9 +88,6 @@
     </ClCompile>
     <ClCompile Include="Glad\KMD2\ShaderProgram.cpp">
       <Filter>Arquivos de Cabeçalho\Glad\KMD2</Filter>
-    </ClCompile>
-    <ClCompile Include="KMD2\Renderer\Renderer.cpp">
-      <Filter>Arquivos de Cabeçalho\KMD2\Renderer</Filter>
     </ClCompile>
     <ClCompile Include="KMD2\Vectors\IVector2.cpp">
       <Filter>Arquivos de Cabeçalho\KMD2\Vector</Filter>
@@ -93,7 +99,7 @@
       <Filter>Arquivos de Origem</Filter>
     </ClCompile>
     <ClCompile Include="Game.cpp">
-      <Filter>Arquivos de Origem</Filter>
+      <Filter>Arquivos de Origem\Game</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>

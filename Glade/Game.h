@@ -9,7 +9,7 @@ public:
 
 	void _Ready() override;
 
-	void _Input(InputEvent Input) override;
+	void _Input(SDL_Event event) override;
 
 	void _Process(double Delta) override;
 
