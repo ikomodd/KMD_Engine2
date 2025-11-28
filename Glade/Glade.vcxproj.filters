@@ -34,9 +34,6 @@
     <Filter Include="Arquivos de Cabeçalho\KMD2\Color">
       <UniqueIdentifier>{c72bf8c8-5130-43e8-bf10-b5373a1df80e}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Arquivos de Cabeçalho\KMD2\Input">
-      <UniqueIdentifier>{3b58e5fe-6451-4e42-b84d-4ee6be25ffbb}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Arquivos de Origem\Game">
       <UniqueIdentifier>{4db172bd-a7f5-4f60-ab49-4d5c5438c893}</UniqueIdentifier>
     </Filter>
@@ -74,9 +71,6 @@
     </ClInclude>
     <ClInclude Include="KMD2\Vectors\Vector2.h">
       <Filter>Arquivos de Cabeçalho\KMD2\Vector</Filter>
-    </ClInclude>
-    <ClInclude Include="KMD2\Input\InputEvent.h">
-      <Filter>Arquivos de Cabeçalho\KMD2\Input</Filter>
     </ClInclude>
     <ClInclude Include="Game.h">
       <Filter>Arquivos de Origem\Game</Filter>

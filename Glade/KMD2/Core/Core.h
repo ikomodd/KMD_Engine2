@@ -9,8 +9,6 @@
 
 #include "../../KMD2/Renderer/Renderer.h"
 
-#include "../Input/InputEvent.h"
-
 #include <SDL3/SDL.h>
 
 //
