@@ -5,7 +5,19 @@
 class GameCore : public KMD_Core {
 public:
 
+	//
+
+	// Suas Variáveis
+
+	//
+
 	GameCore(): KMD_Core("KMD", ivector2(800, 600), color4::Black(), 0) {};
+
+	//
+
+	// Suas Funções
+
+	//
 
 	void _Ready() override;
 

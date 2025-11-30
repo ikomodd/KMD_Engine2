@@ -75,6 +75,9 @@
     <ClInclude Include="Game.h">
       <Filter>Arquivos de Origem\Game</Filter>
     </ClInclude>
+    <ClInclude Include="Glad\KMD2\Texture.h">
+      <Filter>Arquivos de Cabeçalho\Glad\KMD2</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Glad\glad.c">

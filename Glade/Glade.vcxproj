@@ -24,6 +24,7 @@
     <ClInclude Include="Glad\khrplatform.h" />
     <ClInclude Include="Glad\KMD2\Shader.h" />
     <ClInclude Include="Glad\KMD2\ShaderProgram.h" />
+    <ClInclude Include="Glad\KMD2\Texture.h" />
     <ClInclude Include="Glad\KMD2\VAO.h" />
     <ClInclude Include="Glad\KMD2\VBO.h" />
     <ClInclude Include="KMD2\Color\Color.h" />
@@ -131,13 +132,13 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
-      <AdditionalIncludeDirectories>C:\Users\pessoal\Desktop\NALDINHO\SDL3-devel-3.2.12-VC\SDL3-3.2.12\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\pessoal\Desktop\NALDINHO\SDL3_image-devel-3.2.4-VC\SDL3_image-3.2.4\include;C:\Users\pessoal\Desktop\NALDINHO\SDL3-devel-3.2.12-VC\SDL3-3.2.12\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>opengl32.lib;SDL3.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <AdditionalLibraryDirectories>C:\Users\pessoal\Desktop\NALDINHO\SDL3-devel-3.2.12-VC\SDL3-3.2.12\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>opengl32.lib;SDL3.lib;SDL3_image.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\pessoal\Desktop\NALDINHO\SDL3_image-devel-3.2.4-VC\SDL3_image-3.2.4\lib\x64;C:\Users\pessoal\Desktop\NALDINHO\SDL3-devel-3.2.12-VC\SDL3-3.2.12\lib\x64;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">

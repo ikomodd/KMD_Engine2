@@ -1,5 +1,8 @@
 #pragma once
 
+#include <iostream>
+#include <string>
+
 #include <SDL3/SDL.h>
 
 struct ivector2;
@@ -28,11 +31,21 @@ struct vector2 {
 		return vector2(Other.X + X, Other.Y + Y);
 	}
 
+	vector2 operator + (const float& Value) const {
+
+		return vector2(Value + X, Value + Y);
+	}
+
 		// Subtração:
 
 	vector2 operator - (const vector2 &Other) const {
 
 		return vector2(X - Other.X, Y - Other.Y);
+	}
+
+	vector2 operator - (const float& Value) const {
+
+		return vector2(X - Value, Y - Value);
 	}
 
 		// Multiplicação:
@@ -42,7 +55,7 @@ struct vector2 {
 		return vector2(Other.X * X, Other.Y * Y);
 	}
 
-	vector2 operator * (float Value) const {
+	vector2 operator * (const float Value) const {
 
 		return vector2(Value * X, Value * Y);
 	}
@@ -54,19 +67,19 @@ struct vector2 {
 		return vector2(X / Other.X, Y / Other.Y);
 	}
 
-	vector2 operator / (float Value) const {
+	vector2 operator / (const float &Value) const {
 
-		return vector2(Value / X, Value / Y);
+		return vector2(X / Value, Y / Value);
 	}
 
-		// Lógica:
+	// Lógica:
 
-	bool operator == (vector2 Other) {
+	bool operator == (const vector2& Other) const {
 
 		return Other.X == X && Other.Y == Y;
 	}
 
-	bool operator != (vector2 Other) {
+	bool operator != (const vector2& Other) const {
 
 		return Other.X != X && Other.Y != Y;
 	}
@@ -86,4 +99,9 @@ struct vector2 {
 	// Funções:
 
 	ivector2 ToIVector2() const;
+
+	std::string ToString() {
+
+		return "vector2(" + std::to_string(X) + ", " + std::to_string(Y) + ")";
+	}
 };

@@ -1,5 +1,8 @@
 #pragma once
 
+#include <iostream>
+#include <string>
+
 #include <SDL3//SDL.h>
 
 struct vector2;
@@ -35,6 +38,11 @@ struct ivector2 {
 		return ivector2(X - Other.X, Y - Other.Y);
 	}
 
+	ivector2 operator - (const int& Value) const {
+
+		return ivector2(X - Value, Y - Value);
+	}
+
 	// Multiplicação:
 
 	ivector2 operator * (const ivector2& Other) const {
@@ -42,7 +50,7 @@ struct ivector2 {
 		return ivector2(Other.X * X, Other.Y * Y);
 	}
 
-	ivector2 operator * (int Value) const {
+	ivector2 operator * (const int Value) const {
 
 		return ivector2(Value * X, Value * Y);
 	}
@@ -54,19 +62,19 @@ struct ivector2 {
 		return ivector2(X / Other.X, Y / Other.Y);
 	}
 
-	ivector2 operator / (int Value) const {
+	ivector2 operator / (const int &Value) const {
 
-		return ivector2(Value / X, Value / Y);
+		return ivector2(X / Value, Y / Value);
 	}
 
 	// Lógica:
 
-	bool operator == (ivector2 Other) {
+	bool operator == (const ivector2 Other) const {
 
 		return Other.X == X && Other.Y == Y;
 	}
 
-	bool operator != (ivector2 Other) {
+	bool operator != (const ivector2 Other) const {
 
 		return Other.X != X && Other.Y != Y;
 	}
@@ -86,4 +94,9 @@ struct ivector2 {
 	// Funções:
 
 	vector2 ToVector2() const;
+
+	std::string ToString() {
+
+		return "ivector2(" + std::to_string(X) + ", " + std::to_string(Y) + ")";
+	}
 };

@@ -9,6 +9,11 @@
 
 #include "../../KMD2/Renderer/Renderer.h"
 
+#include "../../Glad/KMD2/VAO.h"
+#include "../../Glad/KMD2/VBO.h"
+#include "../../Glad/KMD2/Shader.h"
+#include "../../Glad/KMD2/ShaderProgram.h"
+
 #include <SDL3/SDL.h>
 
 //

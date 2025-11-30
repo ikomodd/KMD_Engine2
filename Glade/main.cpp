@@ -10,6 +10,8 @@ int main() {
 
 	GameCore* Game = new GameCore();
 
+	Game->_Ready();
+
 	Uint64 LastDeltaTick = SDL_GetTicks();
 
 	while (Game->Running)
