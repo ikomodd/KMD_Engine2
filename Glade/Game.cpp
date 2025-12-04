@@ -9,6 +9,11 @@ void GameCore::_Ready() {
 void GameCore::_Input(SDL_Event event) {
 
 	if (event.type == SDL_EVENT_QUIT) _Finish();
+	else if (event.type == SDL_EVENT_WINDOW_RESIZED) {
+
+		SDL_GetWindowSize(Window, &WindowSize.X, &WindowSize.Y);
+		glViewport(0, 0, WindowSize.X, WindowSize.Y);
+	}
 
 	// Seu Script
 

@@ -21,6 +21,11 @@ public:
 		Bind();
 	}
 
+	void Delete() {
+
+		glDeleteBuffers(1, &VBO);
+	}
+
 	void Bind() {
 
 		glBindBuffer(Target, VBO);

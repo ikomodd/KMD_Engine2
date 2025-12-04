@@ -36,6 +36,11 @@ public:
 		SDL_DestroySurface(Surface);
 	}
 
+	void Delete() {
+
+		glDeleteTextures(1, &TextureID);
+	}
+
 	void Bind() {
 
 		glActiveTexture(GL_TEXTURE0);

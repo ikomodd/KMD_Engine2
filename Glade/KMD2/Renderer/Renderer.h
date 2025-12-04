@@ -26,7 +26,7 @@ public:
 
 	//
 
-	KMD_Renderer(SDL_Window* window, color4 background_color) {
+	KMD_Renderer(SDL_Window* window, color4 background_color): BackgroundColor(background_color) {
 
 		SDL_GL_SetAttribute(SDL_GL_CONTEXT_MAJOR_VERSION, 4);
 		SDL_GL_SetAttribute(SDL_GL_CONTEXT_MINOR_VERSION, 6);

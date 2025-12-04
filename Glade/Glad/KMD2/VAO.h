@@ -20,6 +20,11 @@ public:
 		Bind();
 	}
 
+	void Delete() {
+
+		glDeleteVertexArrays(1, &VAO);
+	}
+
 	void Bind() {
 
 		glBindVertexArray(VAO);

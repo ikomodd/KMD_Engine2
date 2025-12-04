@@ -6,6 +6,9 @@ void KMD_GL_ShaderProgram::Create(KMD_GL_Shader vertex_shader, KMD_GL_Shader fra
 
 	ShaderProgramID = glCreateProgram();
 
+	VertexShaderID = vertex_shader.ShaderID;
+	FragmentShaderID = fragment_shader.ShaderID;
+
 	glAttachShader(ShaderProgramID, vertex_shader.ShaderID);
 	glAttachShader(ShaderProgramID, fragment_shader.ShaderID);
 
